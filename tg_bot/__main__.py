@@ -137,8 +137,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/dk_botx" ),  InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/dkbotxchats")],
-                     [InlineKeyboardButton(text="🎬 Youtube Channel", url="https://www.youtube.com/stealthtechnogaming?sub_confirmation=1"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
+                    [InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/dk_botx" ) ]
 
     else:
         update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
